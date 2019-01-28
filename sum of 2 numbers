@@ -1,0 +1,28 @@
+#include<stdio.h>
+int input(int *a,int *b)
+{
+	printf("Enter the 1st number: \n");
+	scanf("%d",a);
+        printf("Enter the 2nd number: \n");
+	scanf("%d",b);
+}
+int compute(int a,int b)
+{
+ 	int c;
+ 	c=a+b;
+	return c;
+}
+void output(int h)
+{ 
+	printf("The sum of two numbers is:%d  \n", h);
+        printf(" Thank you!");
+}
+int main()
+{ 
+    	int x,y,z;
+    	input(&x,&y);
+	z=compute(x,y);
+    	output(z);
+	return 0;
+}
+
