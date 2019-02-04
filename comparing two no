@@ -1,0 +1,33 @@
+#include<stdio.h>
+int input(int *x,int *y)
+{
+	printf("Enter  the first number:\n");
+	scanf("%d",x);
+	printf("Enter the second number:\n");
+	scanf("%d",y);
+}
+int compute(int a,int b) 
+{
+	int c;
+	if (a>b)
+	{
+		c=a;
+	}
+	else
+	{
+		c=b;
+	}
+	return c;
+}
+void output(int g)
+{
+	printf("The greatest number is %d",g);
+}
+int main()
+{
+	int x,y,h;
+	input(&x,&y);
+	h=compute(x,y);
+	output(h);
+	return 0;
+}
